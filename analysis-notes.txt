@@ -1,0 +1,21 @@
+
+Clang-Tidy Static Analysis Report
+
+Tool: clang-tidy
+Language: C++17
+
+Commands Used:
+clang-tidy --version
+clang-tidy main.cpp -- -std=c++17
+clang-tidy main.cpp --checks="-*,readability-*,bugprone-*" -- -std=c++17
+
+Initial Code Issues:
+1. Variable names are unclear.
+2. Business values are hard-coded.
+3. Discount calculation is included inside the total calculation function.
+
+Purpose:
+Improve code readability and maintainability while preserving original program behavior.
+
+Note:
+Actual clang-tidy diagnostics depend on the enabled checks and installed version.
